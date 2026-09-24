@@ -1,0 +1,30 @@
+[project]
+name = "langgraph-pdf-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Sohail Arif", email = "sohailsolutions333@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ddgs>=9.16.0",
+    "faiss-cpu>=1.15.1",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.4",
+    "langchain-openai>=1.6.6",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.12",
+    "langgraph-checkpoint-sqlite>=3.1.1",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.3",
+    "requests>=2.34.2",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+langgraph-pdf-chatbot = "langgraph_pdf_chatbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
